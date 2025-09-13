@@ -1,9 +1,27 @@
-jupyter
-ipykernel
-numpy
+# Data Manipulation
 pandas
-scikit-learn
+numpy
+
+# Data Visualization
 matplotlib
 seaborn
+plotly
+
+# Machine Learning
+scikit-learn
 xgboost
 lightgbm
+
+# Data Preprocessing / Utilities
+scipy
+category_encoders
+
+# Jupyter Notebook Support
+notebook
+ipykernel
+
+Version of libraries
+plt 3.10.6
+sns 0.13.2
+st 1.49.1
+np 2.3.3
