@@ -1,27 +1,24 @@
 # Data Manipulation
-pandas
-numpy
+pandas==2.2.3
+numpy==2.3.3
 
 # Data Visualization
-matplotlib
-seaborn
-plotly
+matplotlib==3.10.6
+seaborn==0.13.2
+plotly==5.24.1
 
 # Machine Learning
-scikit-learn
-xgboost
-lightgbm
+scikit-learn==1.5.2
+xgboost==2.1.1
+lightgbm==4.5.0
 
 # Data Preprocessing / Utilities
-scipy
-category_encoders
+scipy==1.14.1
+category_encoders==2.6.4
 
-# Jupyter Notebook Support
-notebook
-ipykernel
+# Jupyter Notebook Support (optional for Streamlit Cloud, but good for local dev)
+notebook==7.2.2
+ipykernel==6.29.5
 
-Version of libraries
-plt 3.10.6
-sns 0.13.2
-st 1.49.1
-np 2.3.3
+# Web App
+streamlit==1.49.1
