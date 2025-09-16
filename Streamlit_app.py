@@ -1,7 +1,22 @@
 # app.py
+import os
 import streamlit as st
 import pandas as pd
 import pickle
+import sklearn
+#st.write("Scikit-learn version:", sklearn.__version__)
+
+# ----------------------------
+# load Data Set
+# ----------------------------
+
+
+#url = "https://raw.githubusercontent.com/hiraubaid75/ckd-prediction-system/main/Chronic_Kidney_disease_dataset.csv"
+#df = pd.read_csv(url)
+
+# Show dataset in Streamlit
+##st.write("✅ Dataset loaded successfully!")
+#st.dataframe(df.head())
 
 # ----------------------------
 # Page config
@@ -13,9 +28,12 @@ st.set_page_config(page_title="CKD Prediction", page_icon="🩺", layout="wide")
 # ----------------------------
 @st.cache_resource
 def load_model():
-    with open("best_random_forest_model.pkl", "rb") as f:
+    # Get path relative to this file
+    model_path = os.path.join(os.path.dirname(__file__), "best_random_forest_model.pkl")
+    with open(model_path, "rb") as f:
         model = pickle.load(f)
     return model
+
 
 model = load_model()
 
@@ -172,6 +190,4 @@ elif page == "👤 About Me":
     **Contact:** hiraubaid95@gmail.com | [LinkedIn](https://www.linkedin.com/in/hira-barlas/)
     """)
     st.image("https://avatars.githubusercontent.com/u/104772634?v=4", width=200)
-
-
 
